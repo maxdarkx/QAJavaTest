@@ -1,4 +1,4 @@
-package com.juancarlosmaya.objetos;
+package com.juancarlosmaya.soluciones;
 
 import com.juancarlosmaya.principal.ObtenerDatoHelper;
 

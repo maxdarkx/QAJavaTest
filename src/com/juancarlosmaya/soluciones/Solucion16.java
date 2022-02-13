@@ -1,5 +1,6 @@
-package com.juancarlosmaya.objetos;
+package com.juancarlosmaya.soluciones;
 
+import com.juancarlosmaya.objetos.Persona;
 import com.juancarlosmaya.principal.ObtenerDatoHelper;
 
 /*Haz una clase llamada Persona que siga las siguientes condiciones:
@@ -47,7 +48,7 @@ Por último, mostrar la información de cada objeto.
 */
 public class Solucion16 {
     private ObtenerDatoHelper dato;
-    private Persona [] personas;
+    private Persona[] personas;
 
     public String pesoIdeal(String nombre, int imc)
     {
