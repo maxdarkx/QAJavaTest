@@ -18,7 +18,7 @@ public class Solucion7 {
         boolean test = false;
         do {
             System.out.println("Ingrese un numero a verificar: ");
-            test = testZero(Integer.parseInt(helper.obtenerDato()));
+            test = testZero(helper.obtenerDatoEntero());
             if (test)
                 System.out.println("El numero ingresado es mayor o igual que cero\n");
             else

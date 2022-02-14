@@ -13,9 +13,10 @@ public class Solucion14 {
         int dato;
         ObtenerDatoHelper helper = new ObtenerDatoHelper();
         System.out.println("Ingrese un numero:");
-        dato = Integer.parseInt(helper.obtenerDato());
+        dato = helper.obtenerDatoEntero();
 
-        numerosHasta1000de2en2(dato);
+        if(dato > 0)
+            numerosHasta1000de2en2(dato);
 
     }
 

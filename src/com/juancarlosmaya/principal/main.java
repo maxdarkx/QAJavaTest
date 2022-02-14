@@ -12,10 +12,10 @@ public class main {
         {
             //System.out.println("1. ");
             //System.out.println("2. ");
-            //System.out.println("3. ");
-            //System.out.println("4. ");
-            //System.out.println("5. ");
-            System.out.println("6. Mostrar los numeros pares e impares hasta el 100");
+            System.out.println("3. Calcular el area del circulo");
+            System.out.println("4. Calcular el IVA (21%) de un producto");
+            System.out.println("5. Mostrar los numeros pares e impares hasta el 100 (WHILE)");
+            System.out.println("6. Mostrar los numeros pares e impares hasta el 100 (FOR)");
             System.out.println("7. Comparar un numero con cero");
             System.out.println("8. Verificar si el dia de la semana es laborable");
             System.out.println("9. Cambiar y concatenar frases");
@@ -30,7 +30,7 @@ public class main {
             System.out.println("18. Menu Series y Videojuegos");
             System.out.println("0. Salir");
             System.out.print("Ingrese su opcion: ");
-            seleccion = Integer.parseInt(dato.obtenerDato());
+            seleccion = dato.obtenerDatoEntero();
 
             System.out.println("Ingreso la opcion "+ seleccion+"\n");
             switch (seleccion)
@@ -52,7 +52,7 @@ public class main {
                     Solucion2 sol2 = new Solucion2();
                     sol2.solucion();
                     break;
-
+*/
                 case 3:
                     Solucion3 sol3 = new Solucion3();
                     sol3.solucion();
@@ -67,7 +67,7 @@ public class main {
                     Solucion5 sol5 = new Solucion5();
                     sol5.solucion();
                     break;
-                */
+
                 case 6:
                     Solucion6 sol6 = new Solucion6();
                     sol6.solucion();

@@ -5,8 +5,8 @@ public class Persona {
     private int edad;
     private String DNI;
     private char sexo;
-    private float peso;
-    private float altura;
+    private double peso;
+    private double altura;
     private int IMC;
 
     public Persona()
@@ -31,7 +31,7 @@ public class Persona {
         calcularIMC();
     }
 
-    public Persona(String nombre, int edad, char sexo, float peso, float altura) {
+    public Persona(String nombre, int edad, char sexo, double peso, double altura) {
         this.nombre = nombre;
         this.edad = edad;
         this.DNI = generarDNI();
@@ -45,9 +45,9 @@ public class Persona {
     public void calcularIMC()
     {
         int sol = 1;
-        float peso = this.peso;
-        float altura = this.altura;
-        float imc = peso / (altura * altura);
+        double peso = this.peso;
+        double altura = this.altura;
+        double imc = peso / (altura * altura);
         if(imc < 20.0)
         {
             sol = -1;
@@ -114,11 +114,11 @@ public class Persona {
         comprobarSexo();
     }
 
-    public void setPeso(float peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
 
-    public void setAltura(float altura) {
+    public void setAltura(double altura) {
         this.altura = altura;
     }
 
@@ -138,11 +138,11 @@ public class Persona {
         return sexo;
     }
 
-    public float getPeso() {
+    public double getPeso() {
         return peso;
     }
 
-    public float getAltura() {
+    public double getAltura() {
         return altura;
     }
 

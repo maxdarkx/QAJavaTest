@@ -3,6 +3,8 @@ package com.juancarlosmaya.soluciones;
 import com.juancarlosmaya.objetos.Persona;
 import com.juancarlosmaya.principal.ObtenerDatoHelper;
 
+import java.util.Locale;
+
 /*Haz una clase llamada Persona que siga las siguientes condiciones:
 
 Sus atributos son: nombre, edad, DNI, sexo (H hombre, M mujer), peso y altura. No queremos que se accedan
@@ -64,26 +66,8 @@ public class Solucion16 {
         return mensaje;
     }
 
-    public void solucion()
+    public void agregarDatos(String nombre, int edad, char sexo, double peso, double altura)
     {
-        personas = new Persona[3];
-        dato = new ObtenerDatoHelper();
-        String nombre;
-        int edad;
-        char sexo;
-        float peso;
-        float altura;
-
-        System.out.println("Ingrese el nombre del usuario: ");
-        nombre = dato.obtenerDato();
-        System.out.println("Ingrese la edad del usuario: ");
-        edad = Integer.parseInt(dato.obtenerDato());
-        System.out.println("Ingrese el Sexo del usuario (M para mujer, H para hombre): ");
-        sexo = dato.obtenerDato().charAt(0);
-        System.out.println("Ingrese el peso del usuario: ");
-        peso = Float.parseFloat(dato.obtenerDato());
-        System.out.println("Ingrese la altura del usuario: ");
-        altura = Float.parseFloat(dato.obtenerDato());
         personas[0] = new Persona(nombre, edad, sexo, peso, altura);
         personas[1]= new Persona(nombre, edad, sexo);
         personas[2] = new Persona();
@@ -112,6 +96,37 @@ public class Solucion16 {
 
         for (Persona persona : personas) {
             System.out.println(persona.toString());
+        }
+    }
+
+
+    public void solucion()
+    {
+        personas = new Persona[3];
+        dato = new ObtenerDatoHelper();
+        String nombre;
+        int edad;
+        char sexo;
+        double peso;
+        double altura;
+
+        System.out.println("Ingrese el nombre del usuario: ");
+        nombre = dato.obtenerDato();
+        System.out.println("Ingrese la edad del usuario: ");
+        edad = dato.obtenerDatoEntero();
+        if(edad > 0) {
+            System.out.println("Ingrese el Sexo del usuario (M para mujer, H para hombre): ");
+            sexo = dato.obtenerDato().toUpperCase().charAt(0);
+            System.out.println("Ingrese el peso del usuario: ");
+            peso = dato.obtenerDatoDouble();
+            if(peso > 0.0) {
+                System.out.println("Ingrese la altura del usuario: ");
+                altura = dato.obtenerDatoDouble();
+                if(altura > 0)
+                {
+                    agregarDatos(nombre, edad, sexo, peso, altura);
+                }
+            }
         }
     }
 }

@@ -43,7 +43,7 @@ PISTA: CONVINAR SWICHT Y ALGUNO DE LOS BUCLES.
                     "\n" +
                     "7-VER CATEGORIA DE LAS PELICULAS DE LOS ACTORES\n" +
                     "8-SALIR\n");
-            seleccion = Integer.parseInt(dato.obtenerDato());
+            seleccion = dato.obtenerDatoEntero();
             switch (seleccion)
             {
                 case 1:
