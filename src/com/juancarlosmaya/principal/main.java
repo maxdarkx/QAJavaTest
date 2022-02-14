@@ -10,8 +10,8 @@ public class main {
         int seleccion = 1;
         do
         {
-            //System.out.println("1. ");
-            //System.out.println("2. ");
+            System.out.println("1. Indica cual entre dos numeros es mayor o si son iguales");
+            System.out.println("2. Indica cual entre dos numeros ingresados por teclado es mayor o si son iguales\"");
             System.out.println("3. Calcular el area del circulo");
             System.out.println("4. Calcular el IVA (21%) de un producto");
             System.out.println("5. Mostrar los numeros pares e impares hasta el 100 (WHILE)");
@@ -42,7 +42,7 @@ public class main {
                 case 0:
                     System.out.println("Ha seleccionado salir, hasta luego");
                     break;
-/*
+
                 case 1:
                     Solucion1 sol1 = new Solucion1();
                     sol1.solucion();
@@ -52,7 +52,7 @@ public class main {
                     Solucion2 sol2 = new Solucion2();
                     sol2.solucion();
                     break;
-*/
+
                 case 3:
                     Solucion3 sol3 = new Solucion3();
                     sol3.solucion();
