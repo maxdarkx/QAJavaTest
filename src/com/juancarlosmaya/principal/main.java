@@ -10,6 +10,14 @@ public class main {
         int seleccion = 1;
         do
         {
+            //System.out.println("1. ");
+            //System.out.println("2. ");
+            //System.out.println("3. ");
+            //System.out.println("4. ");
+            //System.out.println("5. ");
+            System.out.println("6. Mostrar los numeros pares e impares hasta el 100");
+            System.out.println("7. Comparar un numero con cero");
+            System.out.println("8. Verificar si el dia de la semana es laborable");
             System.out.println("9. Cambiar y concatenar frases");
             System.out.println("10. Eliminar espacios de una frase");
             System.out.println("11. Obtener datos de una frase");
@@ -59,19 +67,22 @@ public class main {
                     Solucion5 sol5 = new Solucion5();
                     sol5.solucion();
                     break;
+                */
                 case 6:
                     Solucion6 sol6 = new Solucion6();
                     sol6.solucion();
                     break;
+
                 case 7:
-                    Solucion7 sol = new Solucion7();
+                    Solucion7 sol7 = new Solucion7();
                     sol7.solucion();
                     break;
+
                 case 8:
-                    Solucion8 sol10 = new Solucion8();
+                    Solucion8 sol8 = new Solucion8();
                     sol8.solucion();
                     break;
-                */
+
                 case 9:
                     Solucion9 sol9 = new Solucion9();
                     sol9.solucion();
