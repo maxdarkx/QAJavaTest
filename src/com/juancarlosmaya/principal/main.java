@@ -10,6 +10,9 @@ public class main {
         int seleccion = 1;
         do
         {
+            System.out.println("9. Cambiar y concatenar frases");
+            System.out.println("10. Eliminar espacios de una frase");
+            System.out.println("11. Obtener datos de una frase");
             System.out.println("12. Comparar dos palabras");
             System.out.println("13. Fecha de hoy");
             System.out.println("14. Numeros hasta 1000 de 2 en 2");
@@ -30,6 +33,57 @@ public class main {
 
                 case 0:
                     System.out.println("Ha seleccionado salir, hasta luego");
+                    break;
+/*
+                case 1:
+                    Solucion1 sol1 = new Solucion1();
+                    sol1.solucion();
+                    break;
+
+                case 2:
+                    Solucion2 sol2 = new Solucion2();
+                    sol2.solucion();
+                    break;
+
+                case 3:
+                    Solucion3 sol3 = new Solucion3();
+                    sol3.solucion();
+                    break;
+
+                case 4:
+                    Solucion4 sol4 = new Solucion4();
+                    sol4.solucion();
+                    break;
+
+                case 5:
+                    Solucion5 sol5 = new Solucion5();
+                    sol5.solucion();
+                    break;
+                case 6:
+                    Solucion6 sol6 = new Solucion6();
+                    sol6.solucion();
+                    break;
+                case 7:
+                    Solucion7 sol = new Solucion7();
+                    sol7.solucion();
+                    break;
+                case 8:
+                    Solucion8 sol10 = new Solucion8();
+                    sol8.solucion();
+                    break;
+                */
+                case 9:
+                    Solucion9 sol9 = new Solucion9();
+                    sol9.solucion();
+                    break;
+
+                case 10:
+                    Solucion10 sol10 = new Solucion10();
+                    sol10.solucion();
+                    break;
+                case 11:
+                    Solucion11 sol11 = new Solucion11();
+                    sol11.solucion();
                     break;
 
                 case 12:
